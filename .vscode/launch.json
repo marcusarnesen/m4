@@ -17,6 +17,18 @@
             "request": "launch",
             "program": "${file}",
             "skipFiles": ["<node_internals>/**"]
+        },
+        {
+            "name": "Debug Fortran (Intel FEE)",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": true,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false
         }
+        
     ]
 }
